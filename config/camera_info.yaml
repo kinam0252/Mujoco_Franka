@@ -1,0 +1,24 @@
+# Camera calibration for cam_base (RealSense D435)
+# Source: ~/ws/ContactWorld/utils/cam.py, camera_calibration.yaml
+
+intrinsics:
+  fx: 906.0086059570312
+  fy: 904.6316528320312
+  cx: 650.87451171875
+  cy: 374.53753662109375
+  width: 1280
+  height: 720
+
+extrinsics:
+  cam_base:
+    parent_frame: fr3_link0
+    child_frame: cam_base_link
+    translation:
+      x: 0.515
+      y: -0.542
+      z: 0.341
+    rotation_quaternion:  # (x, y, z, w)
+      x: -0.251
+      y: 0.214
+      z: 0.779
+      w: 0.533
