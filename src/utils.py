@@ -336,7 +336,7 @@ def make_model_with_cube(T_base_cam, cube_pos, cube_quat_wxyz=None,
         <body name="cube" pos="{cpos}" quat="{cquat}">
           <freejoint name="cube_joint"/>
           <geom name="cube_geom" type="box" size="{csz}" material="wood_block"
-                rgba="1 1 1 1" mass="0.1" friction="1.0 0.005 0.0001"/>
+                mass="0.1" friction="1.0 0.005 0.0001"/>
         </body>
       </worldbody>
     </mujoco>

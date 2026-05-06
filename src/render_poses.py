@@ -29,7 +29,7 @@ POSES = {
     "reach": ([0.0, 0.2, 0.0, -1.5, 0.0, 1.8, 0.785], 0.04),
     "grasp": ([0.0, 0.2, 0.0, -1.5, 0.0, 1.8, 0.785], 0.005),
 }
-CAMERAS = ["cam_base", "front", "side", "top"]
+CAMERAS = ["cam_base", "cam_wrist", "front", "side", "top"]
 
 
 def main():
@@ -37,7 +37,7 @@ def main():
     ap.add_argument("--calib", default=DEFAULT_CALIB)
     args = ap.parse_args()
 
-    out_dir = os.path.join(os.path.dirname(__file__), "..", "output")
+    out_dir = os.path.join(os.path.dirname(__file__), "..", "output", "render_poses")
     os.makedirs(out_dir, exist_ok=True)
 
     T = load_calib(args.calib)

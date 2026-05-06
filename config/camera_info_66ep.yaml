@@ -6,10 +6,10 @@
 
 intrinsics:
   cam_base:
-    fx: 910.878173828125
-    fy: 910.6365356445312
-    cx: 651.9409790039062
-    cy: 381.84967041015625
+    fx: 906.0086059570312
+    fy: 904.6316528320312
+    cx: 650.87451171875
+    cy: 374.53753662109375
     width: 1280
     height: 720
   cam_wrist:
@@ -26,25 +26,25 @@ extrinsics:
     parent_frame: fr3_link0
     child_frame: cam_base_link
     translation:
-      x: 0.515
-      y: -0.542
-      z: 0.341
+      x: 0.5035660161335783
+      y: -0.5483894943434897
+      z: 0.39848681742968217
     rotation_quaternion:  # (x, y, z, w)
-      x: -0.251
-      y: 0.214
-      z: 0.779
-      w: 0.533
+      x: -0.238488
+      y: 0.243302
+      z: 0.788440
+      w: 0.512143
 
   cam_wrist:
     serial: "335222070175"
     parent_frame: fr3_hand
     child_frame: cam_hand_link
     translation:
-      x: -0.054
-      y: -0.017
-      z: 0.053
-    rotation_quaternion:  # (x, y, z, w)
-      x: 0.712
-      y: -0.013
-      z: 0.703
-      w: 0.022
+      x: -0.06653174566316539
+      y: -0.025199766898375955
+      z: 0.05951160976668403
+    rotation_quaternion:  # (x, y, z, w) — optical frame from eye_in_hand calib
+      x: 0.2722828037626761
+      y: 0.26626734082350434
+      z: 0.6461479553506482
+      w: 0.661405017959565
