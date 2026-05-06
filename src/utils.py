@@ -311,7 +311,7 @@ def make_model_with_cube(T_base_cam, cube_pos, cube_quat_wxyz=None,
                  rgb1="0.35 0.35 0.35" width="1" height="1"/>
         <material name="labfloor" texture="labfloor" texuniform="true" reflectance="0.05"/>
         <material name="dark_table" rgba="0.12 0.14 0.18 1" specular="0.3" shininess="0.1" reflectance="0.08"/>
-        <material name="wood_block" rgba="0.95 0.95 0.95 1" specular="0.15" shininess="0.05" reflectance="0.03"/>
+        <material name="wood_block" rgba="0.76 0.65 0.50 1" specular="0.08" shininess="0.02" reflectance="0.02"/>
       </asset>
       <worldbody>
         <light pos="0.3 0.0 1.8" dir="0 0 -1" directional="true"
